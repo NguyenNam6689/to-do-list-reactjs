@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import { AiTwotoneDelete, AiOutlineCheck } from 'react-icons/ai';
 
 function App() {
   const [isCompleteScreen, setIsCompleteScreen] = useState(false);
@@ -40,9 +41,14 @@ function App() {
         </div>
         <div className="todo-list">
           <div className="todo-list-item">
-            <h3>Task 1</h3>
-            <p>Description</p>
-            .todo-oll
+            <div className="text-container">
+              <h3>Task 1</h3>
+              <p>Description</p>
+            </div>
+            <div className="icon-container">
+              <AiTwotoneDelete className="icon" />
+              <AiOutlineCheck className="check-icon" />
+            </div>
           </div>
         </div>
       </div>
